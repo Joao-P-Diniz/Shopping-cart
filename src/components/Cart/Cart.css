@@ -33,3 +33,17 @@
 .cart--active {
   transform: translate(0, 0);
 }
+.cart-finalize-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.cart-finalize-button:hover {
+  background-color: #218838;
+}
