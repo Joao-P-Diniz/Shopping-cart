@@ -9,28 +9,35 @@
 }
 
 .products-column {
-  flex: 2;
-  max-width: 600px;
-  background-color: #fff;
+  flex: 3;
+  max-width: 700px;
   margin-top: 90px;
+  border-radius: 6px;
+}
+.products-column h2{
+  margin-left: 20px;
+  padding:10px;
 }
 
 .summary-column {
   flex: 1;
   max-width: 400px;
-  height: 100px;
+  height: 300px;
   margin-top:90px;
-  margin-left: 40px;
+  padding:20px;
 }
-
+.summary-column h2{
+  margin-left: 20px;
+  margin-bottom: 20px;  
+}
 .checkout-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px; 
   padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  border: none;
+  background-color: #fff;
 }
 .checkout-item img {
   width: 80px;
@@ -46,14 +53,19 @@
 .quantity-controls {
   display: flex;
   align-items: center;
-  border: 1px solid #555454;
+  border: 1px solid #858484;
+  border-radius: 6px;
+  margin: 0 10px;
+  padding: 1px 8px;
 }
 
 .quantity-button {
-  background-color: #ddd;
-  padding: 5px 10px;  
+  padding: 2px;
+  background-color: #fff;
+  border: none;
   margin: 0 5px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .remove-button {
@@ -62,8 +74,11 @@
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 6px;
 }
-
+.remove-button:hover{
+  background-color: #af3027;
+}
 .summary-details {
   padding: 20px;
   border: 1px solid #ddd;
@@ -97,7 +112,7 @@
   background-color: #00a650;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 15px;
   font-size: 16px;
   cursor: pointer;
@@ -110,20 +125,26 @@
 }
 
 .no-items {
-  text-align: center;
+  text-align: start;
   margin-top: 20px;
-  font-size: 18px;
-  color: #ccc;
+  font-size: 22px;
+  color: #f70404;
+  border-radius: 6px;
 }
 
 .back-to-products {
   display: block;
+  width: 300px;
+  justify-content: center;
   text-align: center;
   margin-top: 20px;
   text-decoration: none;
-  color: #007bff;
+  background-color: #007bff;
+  padding: 10px;
+  color:#fff;
+  border-radius: 6px;
 }
 
 .back-to-products:hover {
-  text-decoration: underline;
+  background-color: #03468d;
 }

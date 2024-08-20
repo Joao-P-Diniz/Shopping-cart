@@ -30,9 +30,10 @@ function CheckoutSummary() {
   return (
     <div className="checkout-summary-container">
       <div className="products-column">
-        <h1>Produtos no Carrinho</h1>
+      
         {cartItems.length > 0 ? (
           <ul className="product-list">
+            <h2>Produtos no Carrinho</h2>
             {cartItems.map(item => (
               <li key={item.id} className="checkout-item">
                 <img src={item.thumbnail} alt={item.title} />
@@ -72,9 +73,10 @@ function CheckoutSummary() {
         <Link to="/" className="back-to-products">Voltar para Produtos</Link>
       </div>
       <div className="summary-column">
-        <h1>Resumo da Compra</h1>
+        
         {cartItems.length > 0 && (
           <div className="summary-details">
+            <h2>Resumo da Compra</h2>
             <div className="summary-row">
               <div className="summary-label">Quantidade de Produtos:</div>
               <div className="summary-value">{cartItems.reduce((acc, item) => acc + (item.quantity || 1), 0)}</div>
